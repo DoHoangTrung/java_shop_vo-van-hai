@@ -11,7 +11,7 @@ import Model.Monhang;
 import Model.Sanpham;
 import Model.ShopDB;
  
-public class ControllerServlet extends HttpServlet {
+public class ShopServlet extends HttpServlet {
  
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

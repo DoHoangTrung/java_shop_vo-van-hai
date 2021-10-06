@@ -1,6 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="my" uri="WEB-INF/tlds/mytag.tld" %>
-
 <!DOCTYPE">
 <html>
     <head>
@@ -13,6 +12,8 @@
                 return true;
             }
         </script>
+        <link href="mycss.css" rel="stylesheet" type="text/css"/>
+
     </head>
     <body>
         <h1>GIỎ HÀNG</h1>
