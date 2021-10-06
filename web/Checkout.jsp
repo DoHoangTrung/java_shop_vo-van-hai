@@ -6,7 +6,7 @@
     </head>
     <body>
         <h1 align="center">THANH TOÁN</h1>
-        <my:showBillTagHandler />
+        <my:showBill />
         <br/>
         <a href="Home.jsp">Nhấn vào đây để mua thêm hàng</a>
     </body>

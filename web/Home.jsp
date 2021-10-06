@@ -13,12 +13,11 @@
             }
         </script>
         <link href="mycss.css" rel="stylesheet" type="text/css"/>
-
     </head>
     <body>
-        <h1>GIỎ HÀNG</h1>
+        <h1>CỬA HÀNG</h1>
         
-        <my:ShowMenuTagHandler />
+        <my:ShowMenu/>
         <br>
         <jsp:include page="ShopCart.jsp" />
     </body>

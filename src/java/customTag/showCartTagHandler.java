@@ -22,7 +22,6 @@ public class showCartTagHandler extends SimpleTagSupport {
                 Giohang giohang = (Giohang) obj;
                 ArrayList<Monhang> dssp = giohang.getGiohang();
                 if (dssp.size() > 0) {
-
                     out.println("<table align=\"center\" border=\"1\" width=\"95%\">");
                     out.println("<tr>");
                     out.println("<th>STT</th>");
@@ -48,10 +47,10 @@ public class showCartTagHandler extends SimpleTagSupport {
                         out.println("<td>" + sl + "</td>");
                         out.println("<td>" + dg * sl + "</td>");
                         out.println("<td>");
-                        out.println("<form action=\"ControllerServlet\" method=\"post\">");
+                        out.println("<form id=\"formTra\" action=\"ControllerServlet\" method=\"post\">");
                         out.println("<input type=\"hidden\" name=\"action\" value=\"trahang\"/>");
                         out.println("<input type=\"hidden\" name=\"mssp\" value=\"" + ms + "\"/>");
-                        out.println("<input type=\"submit\" value=\"Trả hàng\"/>");
+                        out.println("<input type=\"submit\" value=\"Trả hàng\" form=\"formTra\"/>");
                         out.println("</form>");
                         out.println("</td>");
                         out.println("</tr>");

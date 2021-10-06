@@ -4,17 +4,17 @@
   <short-name>mytag</short-name>
   <uri>/WEB-INF/tlds/mytag</uri>
   <tag>
-    <name>ShowMenuTagHandler</name>
+    <name>ShowMenu</name>
     <tag-class>customTag.ShowMenuTagHandler</tag-class>
     <body-content>empty</body-content>
   </tag>
   <tag>
-    <name>showCartTagHandler</name>
+    <name>showCart</name>
     <tag-class>customTag.showCartTagHandler</tag-class>
     <body-content>empty</body-content>
   </tag>
   <tag>
-    <name>showBillTagHandler</name>
+    <name>showBill</name>
     <tag-class>customTag.showBillTagHandler</tag-class>
     <body-content>empty</body-content>
   </tag>

@@ -16,21 +16,30 @@ public class ShowMenuTagHandler extends SimpleTagSupport {
     public void doTag() throws JspException {
         JspWriter out = getJspContext().getOut();
         try {
-            out.println("<form action=\"ControllerServlet\">");
+            out.println("<form id=\"formMua\" action=\"ControllerServlet\">");
             out.println("Hãy chọn món hàng cần mua:");
             out.println("<select name=\"monhang\">");
 
+//            PageContext pageContext = (PageContext) getJspContext();
+//            HttpServletRequest req = (HttpServletRequest) pageContext.getRequest();
+//            Object attVal = req.getAttribute("dsSanPham");
+//            if (attVal != null) {
+//                ArrayList<Sanpham> dssp = (ArrayList<Sanpham>) attVal;
+//                for (Sanpham sp : dssp) {
+//                    out.println("<option value=\"" + sp.getMsSP() + "\">" + sp.getTenSP() + "</option>");
+//                }
+//            }
             ShopDB db = new ShopDB();
             ArrayList<Sanpham> dssp = db.getAllProducts();
             for (Sanpham sp : dssp) {
-                out.println("<option value=\""+sp.getMsSP()+ "\">"+sp.getTenSP()+"</option>");
+                out.println("<option value=\"" + sp.getMsSP() + "\">" + sp.getTenSP() + "</option>");
             }
-            
+
             out.println("</select>");
             out.println("Số lượng<input name=\"soluong\" value=\"0\" id=\"sl\"/>");
             out.println("<input type=\"hidden\" name=\"action\" value=\"muahang\"/>");
-            out.println("<input type=\"submit\" value=\"Mua hàng\" onclick=\"return kt()\"/>");
-
+            out.println("<input type=\"submit\" value=\"Mua hàng\" onclick=\"return kt()\" form=\"formMua\"/>");
+            out.println("</form>");
         } catch (IOException ex) {
             Logger.getLogger(ShowMenuTagHandler.class.getName()).log(Level.SEVERE, null, ex);
         } catch (Exception ex) {
