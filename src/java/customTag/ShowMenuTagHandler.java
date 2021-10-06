@@ -38,7 +38,7 @@ public class ShowMenuTagHandler extends SimpleTagSupport {
             out.println("</select>");
             out.println("Số lượng<input name=\"soluong\" value=\"0\" id=\"sl\"/>");
             out.println("<input type=\"hidden\" name=\"action\" value=\"muahang\"/>");
-            out.println("<input type=\"submit\" value=\"Mua hàng\" onclick=\"return kt()\" form=\"formMua\"/>");
+            out.println("<input type=\"submit\" value=\"Mua hàng\" onclick=\"return kt()\" />");
             out.println("</form>");
         } catch (IOException ex) {
             Logger.getLogger(ShowMenuTagHandler.class.getName()).log(Level.SEVERE, null, ex);

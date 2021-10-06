@@ -50,7 +50,7 @@ public class showCartTagHandler extends SimpleTagSupport {
                         out.println("<form id=\"formTra\" action=\"ControllerServlet\" method=\"post\">");
                         out.println("<input type=\"hidden\" name=\"action\" value=\"trahang\"/>");
                         out.println("<input type=\"hidden\" name=\"mssp\" value=\"" + ms + "\"/>");
-                        out.println("<input type=\"submit\" value=\"Trả hàng\" form=\"formTra\"/>");
+                        out.println("<input type=\"submit\" value=\"Trả hàng\" />");
                         out.println("</form>");
                         out.println("</td>");
                         out.println("</tr>");
