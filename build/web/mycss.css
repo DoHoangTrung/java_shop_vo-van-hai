@@ -1,5 +1,9 @@
 
-table ,th,td {
-  border: 1px solid black;
-  border-collapse: collapse;
+table,th,td {
+    
+}
+
+.myTable , .myTable th, .myTable td{
+    border: solid black;
+    border-collapse: collapse;
 }

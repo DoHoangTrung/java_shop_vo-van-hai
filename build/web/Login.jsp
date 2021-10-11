@@ -14,15 +14,15 @@
                         <label for="username">Tên đăng nhập</label>
                     </td>
                     <td>
-                        <input type="text" name="username" id="username" placeholder="">
+                        <input type="text" name="username" id="username" placeholder="" value="admin">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label for="password">Mật khẩu</label>
+                        <label for="password" >Mật khẩu</label>
                     </td>
                     <td>
-                        <input type="password" name="password" id="password" placeholder="">
+                        <input type="password" name="password" id="password" placeholder="" value="123">
                     </td>
                 </tr>
             </table>

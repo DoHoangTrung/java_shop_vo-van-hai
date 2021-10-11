@@ -6,11 +6,11 @@
         </session-timeout>
     </session-config>
     <servlet>
-        <servlet-name>ControllerServlet</servlet-name>
+        <servlet-name>ShopServlet</servlet-name>
         <servlet-class>Controller.ShopServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>ControllerServlet</servlet-name>
+        <servlet-name>ShopServlet</servlet-name>
         <url-pattern>/ControllerServlet</url-pattern>
     </servlet-mapping>
     <welcome-file-list>

@@ -23,7 +23,7 @@ public class showBillTagHandler extends SimpleTagSupport {
                 Giohang giohang = (Giohang) obj;
                 ArrayList<Monhang> dssp = giohang.getGiohang();
 
-                out.println("<table align=\"center\" border=\"1\" width=\"95%\">");
+                out.println("<table class=\"myTable\" align=\"center\" width=\"95%\">");
                 out.println("<tr>");
                 out.println("<th>STT</th>");
                 out.println("<th>Tên món hàng</th>");
